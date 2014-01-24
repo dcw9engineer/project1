@@ -1,19 +1,21 @@
+<!doctype html>
 <html>
 <head>
     <title>My Assignment Home Page</title>
+    <meta charset="utf-8" />
     <link href="styles/mainStyles.css" rel="stylesheet" />
 </head>
-<header>
-	A Civil Enginner Learning Web Design
-	<nav>
-		<form id="navigation" class="navForm">
-			<input type="button" name="Home" id="home" value="Home" onclick="location.href='index.html'" />
-			<input type="button" name="HTML1" id="html1btn" value="HTML1" onclick="location.href='html1.html'" />
-			<input type="button" name="About Me" id="aboutMe" value="About Me" onclick="location.href='aboutMe.html'" />
-		</form>
-	</nav>
-</header>
 <body>
+	<header>
+		<div class="title">A Civil Enginner Learning Web Design</div>
+		<nav>
+			<ul>
+				<a href="/"><li>Home</li></a>
+				<a href="html1.html"><li>HTML1</li></a>
+				<a href="aboutMe.html"><li>About Me</li></a>
+			</ul>
+		</nav>
+	</header>
 	<section id="homeSec" class="normalText">
 		<h1>Welcome to my assignments page!</h1>
 		<p>
@@ -23,7 +25,7 @@
 			You can also read a little about me by on the "About Me" page.
 		</p>
 	</section>
+	<script src="js/mainJS.js" type="text/javascript"></script>
+	<noscript>Hey you need to enable JavaScripts if you want to view this web page.</noscript>
 </body>
-<script src="js/mainJS.js" type="text/javascript"></script>
-<noscript>Hey you need to enable JavaScripts if you want to view this web page.</noscript>
 </html>
