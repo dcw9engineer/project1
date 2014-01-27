@@ -1,12 +1,37 @@
 #aboutMeSec img{
 	height: 10em;
+	width: 10em;
 	transition: height 2s;
 }
-#aboutMeSec img:hover{
-	height: 20em;
-	transition: height 2s;
+#aboutMeSec .aboutMeSec{
+	float: top;
+	float: left;
+	width: 10em;
+	height: 10em;
+}
+#aboutMeSec div{
+	position: relative;
+	float: left;
+}
+#aboutMeSec span{
+	float: left;
+}
+#aboutMeSec .aboutMeSec:hover{
+	width: 30em;
+	height: 10em;
+	transition: width 2s;
 	font-size: large;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	color: blue;
+	font-size: 20px;
 }
+.contactMe{
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+/*
 html{
 	background: url(../images/water.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -14,7 +39,4 @@ html{
   -o-background-size: cover;
   background-size: cover;
 }
-.inTextImg:hover{
-	border: black 50px:
-	width: 100%;
-}
+*/
