@@ -1,25 +1,41 @@
+#aboutMeSec section{
+	height:150px;
+	width: 100%;
+	border: 20px;
+	border-color: black;
+	transition: 1s;
+}
 #aboutMeSec img{
-	height: 10em;
-	width: 10em;
-	transition: height 2s;
-}
-#aboutMeSec .aboutMeSec{
-	float: top;
+	height: 100%;
 	float: left;
-	width: 10em;
-	height: 10em;
+	padding-right: 50px;
 }
-#aboutMeSec div{
+/*
+font-family: 'Permanent Marker', cursive;
+font-family: 'Muli', sans-serif;
+font-family: 'Happy Monkey', cursive;
+font-family: 'IM Fell English', serif;
+font-family: 'Rock Salt', cursive;
+ */
+#aboutMeSec p{
+	padding-left: 15px;
+}
+header{
 	position: relative;
-	float: left;
+	float: top;
+	width: 100%;
+	font-family:'Rock Salt',cursive;
+	text-align: center;
+	font-size: 30px;
 }
-#aboutMeSec span{
-	float: left;
+header h1{
+	10em;
+	margin-bottom: 0px;
 }
-#aboutMeSec .aboutMeSec:hover{
-	width: 30em;
-	height: 10em;
-	transition: width 2s;
+
+#aboutMeSec section:hover{
+	height: 200px;
+	transition: height 1s;
 	font-size: large;
 	margin: 0px;
 	border: 0px;
@@ -27,10 +43,34 @@
 	color: blue;
 	font-size: 20px;
 }
-.contactMe{
-	position: relative;
-	bottom: 0px;
-	left: 0px;
+
+#contentNavAndText{
+	width: 100%
+	position: absolute;
+}
+#contentNavAndText h1{
+	font-family: 'Permanent Marker';
+}
+#contentNavAndText a,h2{
+	font-family: 'Permanent Marker';
+	color: black;
+	font-size: 18px;
+}
+#docNav{
+	position: fixed;
+	width: 20%;
+	/*border-right: solid;
+	border-color:#000000;
+	border-width:10px;*/
+}
+#html1Sec{
+	width: 80%;
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+	float: left;
+	overflow:hidden;
+}
 /*
 html{
 	background: url(../images/water.jpg) no-repeat center center fixed; 
