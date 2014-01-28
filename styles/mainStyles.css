@@ -1,15 +1,4 @@
-#aboutMeSec section{
-	height:150px;
-	width: 100%;
-	border: 20px;
-	border-color: black;
-	transition: 1s;
-}
-#aboutMeSec img{
-	height: 100%;
-	float: left;
-	padding-right: 50px;
-}
+
 /*
 font-family: 'Permanent Marker', cursive;
 font-family: 'Muli', sans-serif;
@@ -17,60 +6,97 @@ font-family: 'Happy Monkey', cursive;
 font-family: 'IM Fell English', serif;
 font-family: 'Rock Salt', cursive;
  */
-#aboutMeSec p{
-	padding-left: 15px;
+/*This is the general styling section*/
+h1, h2{
+	font-family: 'Permanent Marker';
 }
-header{
+h2{
+	font-size:18px;
+}
+p{
+	font-family:'Happy Monkey', cursive;
+}
+header, header h1{
 	position: relative;
-	float: top;
 	width: 100%;
 	font-family:'Rock Salt',cursive;
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
 }
 header h1{
 	10em;
 	margin-bottom: 0px;
 }
-
-#aboutMeSec section:hover{
+/*This is the About Me page styling*/
+.imgDiv{
+	height:150px;
+	width: 250px;
+	float: left;
+	padding-right: 50px;
+}
+.imgDiv:hover{
 	height: 200px;
 	transition: height 1s;
-	font-size: large;
+}
+.imgDiv img{
+	height: 100%;
+}
+#aboutMeSec section{
+	height:150px;
+	width: 100%;
+	transition: 1s;
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
-	color: blue;
-	font-size: 20px;
 }
 
+#aboutMeSec section:hover{
+	height: 250px;
+	transition: height 1s;
+	color: blue;
+	font-size:larger;
+}
+.contactMe{
+	font-family:'Muli', sans-serif;
+	text-decoration: none;
+	border-top-style: solid;
+	margin-top: 10px;
+}
+/*This is the HTML1 page styling*/a
 #contentNavAndText{
 	width: 100%
 	position: absolute;
 }
-#contentNavAndText h1{
-	font-family: 'Permanent Marker';
-}
-#contentNavAndText a,h2{
+
+
+#contentNavAndText a{
 	font-family: 'Permanent Marker';
 	color: black;
 	font-size: 18px;
+	text-decoration:none;
+}
+#contentNavAndText a:hover{
+	color:#0000FF;
+	font-size:19px;
 }
 #docNav{
 	position: fixed;
-	width: 20%;
+	top: 50px;
+	width: 13%;
+	overflow:auto;
 	/*border-right: solid;
 	border-color:#000000;
 	border-width:10px;*/
 }
 #html1Sec{
-	width: 80%;
+	width: 87%;
 	margin: 0px;
 	position: absolute;
 	right: 0px;
 	float: left;
 	overflow:hidden;
 }
+
 /*
 html{
 	background: url(../images/water.jpg) no-repeat center center fixed; 
