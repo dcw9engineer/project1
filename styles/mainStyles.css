@@ -13,8 +13,11 @@ h1, h2{
 h2{
 	font-size:18px;
 }
-p{
+p, li{
 	font-family:'Happy Monkey', cursive;
+}
+li{
+	font-size:12px;
 }
 header, header h1{
 	position: relative;
@@ -26,6 +29,10 @@ header, header h1{
 header h1{
 	10em;
 	margin-bottom: 0px;
+}
+h3{
+	font-family:'IM Fell English', serif;
+	font-size: 18px;
 }
 /*This is the About Me page styling*/
 .imgDiv{
