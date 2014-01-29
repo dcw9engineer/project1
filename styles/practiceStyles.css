@@ -1,0 +1,33 @@
+div.txtWithImg {
+	margin: 1em;
+	position: relative;
+	width: 30em;
+	height: 20em;
+	border: 0.2em solid #000;
+	overflow: hidden;
+	float: left;
+	}	
+	div.txtWithImg div img{
+		height:100%;
+	}
+	div.txtWithImg div {
+		width: 100%;
+		height: 100%;
+		font-size: 12px;
+		/*padding: 10px;*/
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		background: #fff;
+   		-webkit-transition: left 1s ease-in-out;
+		}
+		
+	div.txtWithImg div.txtImg {
+		z-index: 1000;
+		}		
+	
+div.txtWithImg:hover div.txtImg {
+	-webkit-transition: left 1s ease-in-out;
+	left: -40em;
+}
