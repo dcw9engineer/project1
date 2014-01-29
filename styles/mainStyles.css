@@ -1,4 +1,3 @@
-
 /*
 font-family: 'Permanent Marker', cursive;
 font-family: 'Muli', sans-serif;
@@ -27,8 +26,7 @@ p, li{
 
 header{
 	border-bottom-style:solid;
-	/*background-color: #38CC2B;*/
-    background: linear-gradient(rgb(65, 209, 29), rgb(16, 95, 9)); /* For Safari */
+    background: linear-gradient(rgb(65, 209, 29), rgb(16, 95, 9));
 }
 header nav a{
 	/*height: 30px;*/
@@ -49,61 +47,78 @@ header h1{
         margin-top: 0px;
         font-size:1.5em;
 }
+/*This is the main navigation styling*/
+header button{
+	font-family:'Rock Salt',cursive;
+	background:#000000;
+	border:#000000;
+	color: rgb(247, 247, 247);
+}
+header button:hover{
+	background:rgb(20, 111, 34);
+}
+/*This is the Home page styling*/
+#homeSec{
+	margin:1em;
+}
 /*This is the About Me page styling*/
 #aboutMeSec h1{
 	text-decoration:underline;
+	margin-left:1em;
 }
-.imgDiv{
-	position:relative;
-    height:150px;
-    width: 250px;
-    float: left;
-    padding-right: 50px;
-    overflow:hidden;
-}
-/*
-.imgDiv:hover{
-        height: 250px;
-        transition: height 1s;
-}
-*/
-/*
-#aboutMesec section:hover img{
-        height: 250px;
-        transition: height 1s;
-}
-*/
-.imgDiv img{
-        height: 100%;
-}
-#aboutMeSec section{
-        height:150px;
-        width: 100%;
-        transition: 1s;
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-}
-
-#aboutMeSec section:hover section.imgText {
-	-webkit-transition: left 1s ease-in-out;
-	left: -122px;
-}
-
-/*
-#aboutMeSec section:hover{
-        height: 250px;
-        transition: height 1s;
-        color: blue;
-        font-size:larger;
-}
-*/
 .contactMe{
         font-family:'Muli', sans-serif;
         text-decoration: none;
-        border-top-style: solid;
-        margin-top: 10px;
+        float:left;
+        margin-left:1em;
 }
+div.txtWithImg {
+	margin: 1em;
+	position: relative;
+	width: 30em;
+	height: 20em;
+	border: 0.2em solid #000;
+	overflow: hidden;
+	float: left;
+}	
+	div.txtWithImg div img{
+		height:100%;
+	}
+	div.txtWithImg div {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+   		-webkit-transition: left 1s ease-in-out;
+   		-ms-transition: left 1s ease-in-out;
+   		-moz-transition: left 1s ease-in-out;
+   		-o-transition: left 1s ease-in-out;
+   		transition: left 1s ease-in-out;
+   		background: linear-gradient(rgb(237, 243, 235), rgb(183, 187, 182));
+	}
+	div.txtWithImg div.imgTxt{
+		font-family: 'Happy Monkey', cursive;
+		width: 28em;
+		height: 18em;
+		padding: 1em;
+		text-align:justify;
+		font-size:1.0em;
+	}
+	div.txtWithImg div.txtImg {
+		text-align:center;
+		z-index: 1000;
+	}		
+	
+div.txtWithImg:hover div.txtImg {
+	-webkit-transition: left 1s ease-in-out;
+	-ms-transition: left 1s ease-in-out;
+	-moz-transition: left 1s ease-in-out;
+	-o-transition: left 1s ease-in-out;
+	-webkit-transition: left 1s ease-in-out;
+	left: -40em;
+}
+
 /*This is the HTML1 page styling*/
 #contentNavAndText{
         width: 100%

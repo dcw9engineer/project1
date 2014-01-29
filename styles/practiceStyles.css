@@ -13,17 +13,22 @@ div.txtWithImg {
 	div.txtWithImg div {
 		width: 100%;
 		height: 100%;
-		font-size: 12px;
-		/*padding: 10px;*/
 		position: absolute;
 		top: 0;
 		left: 0;
-		text-align: center;
-		background: #fff;
    		-webkit-transition: left 1s ease-in-out;
+   		background: linear-gradient(rgb(237, 243, 235), rgb(183, 187, 182));
 		}
-		
+	div.txtWithImg div.imgTxt{
+		font-family: 'Happy Monkey', cursive;
+		width: 28em;
+		height: 18em;
+		padding: 1em;
+		text-align:justify;
+		font-size:1.0em;
+		}
 	div.txtWithImg div.txtImg {
+		text-align:center;
 		z-index: 1000;
 		}		
 	
