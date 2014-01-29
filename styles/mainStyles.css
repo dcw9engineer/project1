@@ -7,34 +7,52 @@ font-family: 'IM Fell English', serif;
 font-family: 'Rock Salt', cursive;
  */
 /*This is the general styling section*/
-h1, h2{
+body{
+	margin:0 0 0 0;
+}
+h1, h2, h3{
         font-family: 'Permanent Marker';
 }
 h2{
-        font-size:18px;
+	/*font-size:18px;*/
+	font-size:1.0em;
+}
+h3{
+	font-size: 1.0em;
 }
 p, li{
         font-family:'Happy Monkey', cursive;
+        font-size:1.0em;
 }
-li{
-        font-size:12px;
+
+header{
+	border-bottom-style:solid;
+	/*background-color: #38CC2B;*/
+    background: linear-gradient(rgb(65, 209, 29), rgb(16, 95, 9)); /* For Safari */
+}
+header nav a{
+	/*height: 30px;*/
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 header, header h1{
-        position: relative;
+        position: static;
+        top: 0px;
         width: 100%;
         font-family:'Rock Salt',cursive;
         text-align: center;
-        font-size: 35px;
+        font-size: 100%;
 }
 header h1{
-        10em;
+        height:2em;
         margin-bottom: 0px;
-}
-h3{
-        font-family:'IM Fell English', serif;
-        font-size: 18px;
+        margin-top: 0px;
+        font-size:1.5em;
 }
 /*This is the About Me page styling*/
+#aboutMeSec h1{
+	text-decoration:underline;
+}
 .imgDiv{
         height:150px;
         width: 250px;
@@ -69,7 +87,7 @@ h3{
         border-top-style: solid;
         margin-top: 10px;
 }
-/*This is the HTML1 page styling*/a
+/*This is the HTML1 page styling*/
 #contentNavAndText{
         width: 100%
         position: absolute;
@@ -79,29 +97,31 @@ h3{
 #contentNavAndText a{
         font-family: 'Permanent Marker';
         color: black;
-        font-size: 18px;
         text-decoration:none;
 }
 #contentNavAndText a:hover{
         color:#0000FF;
-        font-size:19px;
+        font-size:1.2em;
 }
 #docNav{
         position: fixed;
-        top: 50px;
-        width: 13%;
+        width: 14%;
         overflow:auto;
+        margin-left: 2%;
+        margin-right: 2%
         /*border-right: solid;
         border-color:#000000;
         border-width:10px;*/
 }
 #html1Sec{
-        width: 87%;
+        width: 80%;
         margin: 0px;
         position: absolute;
         right: 0px;
         float: left;
         overflow:hidden;
+        border-left-style: solid;
+		padding-left: 2%;
 }
 
 /*
