@@ -26,6 +26,7 @@ p, li{
 
 header{
 	border-bottom-style:solid;
+	background: rgb(65,209,29); /*this is for tablets*/
     background: linear-gradient(rgb(65, 209, 29), rgb(16, 95, 9));
 }
 header nav a{
@@ -90,6 +91,7 @@ div.txtWithImg {
 		position: absolute;
 		top: 0;
 		left: 0;
+		background: gray;/*this is for tablets*/
    		-webkit-transition: left 1s ease-in-out;
    		-ms-transition: left 1s ease-in-out;
    		-moz-transition: left 1s ease-in-out;
@@ -155,13 +157,3 @@ div.txtWithImg:hover div.txtImg {
         border-left-style: solid;
 		padding-left: 2%;
 }
-
-/*
-html{
-        background: url(../images/water.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-*/
