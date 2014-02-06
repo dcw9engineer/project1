@@ -12,9 +12,9 @@ noticeDiv.style.visibility='hidden';
 var headerTag = document.createElement('header');
 var headerText = '<h1>A Civil Engineer Learning Web Design</h1>' + 
 				'<nav>'+
-					'<a href="index.html"><button>Home</button></a>'+
-					'<a href="html1.html"><button>HTML1</button></a>'+
-					'<a href="aboutMe.html"><button>About Me</button></a>'+
+					'<a href="index.html"><button id="homeButton">Home</button></a>'+
+					'<a href="html1.html"><button id="html1Button">HTML1</button></a>'+
+					'<a href="aboutMe.html"><button id="aboutMeButton">About Me</button></a>'+
 				'</nav>';
 //footer tags
 var footerText = 'Brought to you by me';
@@ -22,6 +22,10 @@ var footerTag = document.createElement('footer');
 //create a set timeout
 function stayFunction(){
 	noticeDiv.style.visibility="hidden";
+	//document.getElementById('homeButton').disabled=false;
+	document.getElementById('homeButton').disabled=false;
+	document.getElementById('html1Button').disabled=false;
+	document.getElementById('aboutMeButton').disabled=false;
 	timeLapse.apply();
 };
 function goFunction(){
@@ -38,6 +42,10 @@ var getHeader = function(){
 };
 var alertMe = function(){
 	noticeDiv.style.visibility="visible";
+	//document.getElementsByClassName('navButton').disabled=true;
+	document.getElementById('homeButton').disabled=true;
+	document.getElementById('html1Button').disabled=true;
+	document.getElementById('aboutMeButton').disabled=true;
 };
 var timeLapse = function(){
 	setTimeout(alertMe,10000);
