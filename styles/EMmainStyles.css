@@ -48,21 +48,6 @@ header h1{
         margin-top: 0px;
         font-size:1.5em;
 }
-#content{
-	padding-bottom: 2.5em;
-}
-/*This is the footer styling portion*/
-footer {
-	position: fixed;
-	border-top-style:solid;
-	background:rgb(65,209,29);/*this is for tablets*/
-	background:linear-gradient(rgb(16,95,9),rgb(65,209,29));
-	height: 2em;
-	width: 100%;
-	bottom: 0em;
-	z-index: 1000;
-	text-align: center;
-}
 /*This is the main navigation styling*/
 header button{
 	font-family:'Rock Salt',cursive;
@@ -90,7 +75,6 @@ header button:hover{
         text-decoration: none;
         float:left;
         margin-left:1em;
-        padding-bottom: 3em;
 }
 
 div.txtWithImg {
@@ -176,30 +160,4 @@ div.txtWithImg:hover div.txtImg {
         overflow:hidden;
         border-left-style: solid;
 		padding-left: 2%;
-		padding-bottom:3em;
-}
-/*notification styling*/
-#notification{
-	border-style:solid;
-	height:150px;
-	width:250px;
-	text-align: center;
-	left:35%;
-	top:40%;
-	position:absolute;
-	font-size:14px;
-	background-color:rgb(229,230,23);
-	z-index: 1000;
-}
-#notification h2{
-	font-family: 'IM Fell English', serif;
-}
-.noticeButton{
-	font-family: 'IM Fell English', serif;
-	background:#000000;
-	border:#000000;
-	color: rgb(247, 247, 247);
-}
-.noticeButton:hover{
-	color: rgb(299,230,23);
 }
