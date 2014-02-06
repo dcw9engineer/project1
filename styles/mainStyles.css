@@ -186,7 +186,7 @@ div.txtWithImg:hover div.txtImg {
 	text-align: center;
 	left:35%;
 	top:40%;
-	position:absolute;
+	position:fixed;
 	font-size:14px;
 	background-color:rgb(229,230,23);
 	z-index: 1000;
