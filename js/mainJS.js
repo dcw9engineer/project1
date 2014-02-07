@@ -49,9 +49,28 @@ var alertMe = function(){
 };
 var timeLapse = function(){
 	setTimeout(alertMe,10000);
-	//timeLapse.apply();
+};
+var setTitle = function(){
+	var page = location.href;
+	var title = 'unknown';
+	switch(page){
+		case 'http://derekshtml1.uphero.com/index.html':
+			title = 'Home';
+			break;
+		case 'http://derekshtml1.uphero.com/html1.html':
+			title = 'HTML 1';
+			break;
+		case 'http://derekshtml1.uphero.com/aboutMe.html':
+			title = 'About Me';
+			break;
+		default:
+			title = 'Project 1';
+	};
+	//console.log(title);
+	document.title=title;
 };
 var getStarted = function(){
+	setTitle.apply();
 	getHeader.apply();
 	timeLapse.apply();
 	document.body.appendChild(noticeDiv);
