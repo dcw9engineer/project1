@@ -5,12 +5,20 @@
     <meta charset="UTF-8" />
     <link href="styles/mainStyles.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Muli|Happy+Monkey|IM+Fell+English|Rock+Salt' rel='stylesheet' type='text/css'>
-	<script src="js/mainJS.js" type="text/javascript"></script>
+	
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+	<script src="js/jquery-1.11.0.js"></script>
 </head>
 <body>
 <div id="content">
 	<div id="contentNavAndText">
 		<nav id="docNav">
+			<div id="accordionOpt">
+				<div id="accordionStatus">You are only showing one section at a time.</div>
+				<button id="multipleBtn" class="showBtn">Show Multiple Sections</button>
+				<button id="oneBtn" class="showBtn">Show One Section</button>
+				
+			</div><br />
 			<a href="#html1Sec">Top</a><br /><br />
 			<a href="#intro">Introduction to Web Frameworks</a><br /><br />
 			<a href="#architecture">Web Framework Architectures</a><br /><br />
@@ -22,79 +30,90 @@
 			<h1>HTML 1 Assignment - Investigating Web Frameworks</h1>
 			<section id="intro" class="reportText">
 				<h2>Introduction to Web Frameworks</h2>
-				<p>
-					Web development is the most popular way of sharing information today. This information may be in the form of advertisements, scientific data, shopping options, or just gossip. It can be anything at all. Everyone is online during some time of the day and most people are online more often than not.
-				</p>
-				<p>
-					With such large quantities of usage for web-based information there is a great need for web development. Not only is there a need for web sites to exist for every aspect of our lives, but there is a need for those websites to be constantly updated and improved to meet the constantly shifting markets and demands. This means that web development needs to fast, fluid, and easy. This just as true for the experienced programmer as it is for a new business owner who has never programed anything before.
-				</p>
-				<p>
-					To accommodate this need the technology of web frameworks has developed. Web frameworks come in all sorts of varieties and make use of many different types of programming languages. Some frameworks require more programming knowledge to use while others are more along the lines of the drag and drop style for web design and do not require any knowledge of programming languages or data structuring.
-				</p>
-				<p>
-					A web framework has three main parts an architecture, applications, and features which come in different varieties. It is the variety of these three parts that makes any framework more or less useful for any particular user or web design scope.
-				</p>
+				<div>
+					<p>
+						Web development is the most popular way of sharing information today. This information may be in the form of advertisements, scientific data, shopping options, or just gossip. It can be anything at all. Everyone is online during some time of the day and most people are online more often than not.
+					</p>
+					<p>
+						With such large quantities of usage for web-based information there is a great need for web development. Not only is there a need for web sites to exist for every aspect of our lives, but there is a need for those websites to be constantly updated and improved to meet the constantly shifting markets and demands. This means that web development needs to fast, fluid, and easy. This just as true for the experienced programmer as it is for a new business owner who has never programed anything before.
+					</p>
+					<p>
+						To accommodate this need the technology of web frameworks has developed. Web frameworks come in all sorts of varieties and make use of many different types of programming languages. Some frameworks require more programming knowledge to use while others are more along the lines of the drag and drop style for web design and do not require any knowledge of programming languages or data structuring.
+					</p>
+					<p>
+						A web framework has three main parts an architecture, applications, and features which come in different varieties. It is the variety of these three parts that makes any framework more or less useful for any particular user or web design scope.
+					</p>
+				</div>
 			</section>
 			<section id="architecture" class="reportText">
 				<h2>Web Framework Architectures</h2>
-				<p>
-					Frameworks are set up with three tiers of organization: the client (user); the application (logic); the database (data). These parts are not part of the framework itself but the communication structure for the framework to be able to build the websites properly.
-				</p>
-				<p>
-					 The client is the machine being used by the person viewing a website. In the past 10 years the variety of clients has exploded from essentially one option, the desktop computer with limited screen sizes and resolutions, to all sorts of options. Today’s options for client machines include phones, tablets, desktop computers with multiple screens, laptops, netbooks, and televisions.
-				</p>
-				<p>
-					The application represents the middle tier of a framework structure and includes any applications run on the client which send and receive data online. This could be a web browser or some other application like Google Earth or Skype or anything installed on the client machine which communicates with an online source. This application controls the logical processing that needs to be done and allows some processing to be done on the server side and some to be done on the client side.
-				</p>
-				<p>
-					The database is hosted on the server machine which also hosts the website. It is where information is stored for the application to receive and it is where the application may put information. The way the server interacts with the application is refered to as the model view controller (MVC). The framework MVC is often designed in one of two ways, as a push based structure or a pull based structure.
-				</p>
-				<p>
-					A push based, or action based, structure is when the heavy lifting for processing data and performing logic operations is done by the server. This means that the client does not have to use as much memory to run the application.
-				</p>
-				<p>
-					A pull based, or component based, structure is when the application pulls data from the server. This will save memory on the server so that it can communicate with more applications from different clients simultaneously.
-				</p>
+				<div>
+					<p>
+						Frameworks are set up with three tiers of organization: the client (user); the application (logic); the database (data). These parts are not part of the framework itself but the communication structure for the framework to be able to build the websites properly.
+					</p>
+					<p>
+						 The client is the machine being used by the person viewing a website. In the past 10 years the variety of clients has exploded from essentially one option, the desktop computer with limited screen sizes and resolutions, to all sorts of options. Today’s options for client machines include phones, tablets, desktop computers with multiple screens, laptops, netbooks, and televisions.
+					</p>
+					<p>
+						The application represents the middle tier of a framework structure and includes any applications run on the client which send and receive data online. This could be a web browser or some other application like Google Earth or Skype or anything installed on the client machine which communicates with an online source. This application controls the logical processing that needs to be done and allows some processing to be done on the server side and some to be done on the client side.
+					</p>
+					<p>
+						The database is hosted on the server machine which also hosts the website. It is where information is stored for the application to receive and it is where the application may put information. The way the server interacts with the application is refered to as the model view controller (MVC). The framework MVC is often designed in one of two ways, as a push based structure or a pull based structure.
+					</p>
+					<p>
+						A push based, or action based, structure is when the heavy lifting for processing data and performing logic operations is done by the server. This means that the client does not have to use as much memory to run the application.
+					</p>
+					<p>
+						A pull based, or component based, structure is when the application pulls data from the server. This will save memory on the server so that it can communicate with more applications from different clients simultaneously.
+					</p>
+				</div>
 			</section>
 			<section id="applications" class="reportText">
 				<h2>Web Framework Applications</h2>
-				<p>
-					Framework applications are the actual applications used to design websites within a framework. Like the applications described in the three tier framework this communicates with the server to create the website and web pages. Unlike those applications, this is the actual framework. Some frameworks have applications or platforms where all of the web design is done with little to no programming at all. These are often referred to as content management systems (CMS) because they have a very extensive graphical user interface (GUI) which is used to control all of the content. These are sometimes called WYSIWYG (what you see is what you get) applications because the way you enter information into the application or platform is the way it will appear in the final product or website.
-				</p>
-				<p>
-					Some framework applications include a GUI for structuring data and websites but still require programming to use properly. These are more popular among experienced developers while the CMS applications are preferred by non-programmers.
-				</p>
-				<p>
-					Not every framework has a strict application or platform that it is built on because that is not the most important part of a framework. The most important part of any framework is the library.
-				</p>
+				<div>
+					<p>
+						Framework applications are the actual applications used to design websites within a framework. Like the applications described in the three tier framework this communicates with the server to create the website and web pages. Unlike those applications, this is the actual framework. Some frameworks have applications or platforms where all of the web design is done with little to no programming at all. These are often referred to as content management systems (CMS) because they have a very extensive graphical user interface (GUI) which is used to control all of the content. These are sometimes called WYSIWYG (what you see is what you get) applications because the way you enter information into the application or platform is the way it will appear in the final product or website.
+					</p>
+					<p>
+						Some framework applications include a GUI for structuring data and websites but still require programming to use properly. These are more popular among experienced developers while the CMS applications are preferred by non-programmers.
+					</p>
+					<p>
+						Not every framework has a strict application or platform that it is built on because that is not the most important part of a framework. The most important part of any framework is the library.
+					</p>
+				</div>
 			</section>
 			<section id="libraries" class="reportText">
 				<h2>Web Framework Libraries</h2>
-				<p>
-					All web frameworks are structured on a programming language which uses the inputs to convert everything into HTML to be viewed in a website. To make a framework special it needs to have some extra functionality which you do not get from simply writing code in that programming language without the framework. The framework coding library is where this comes from. The library defines all the structure of the framework and all of the features that make website creation fluid, fast, and easy. Some frameworks are nothing more than one file with all of the extra coding functions which one may use to make writing a website easier. Some JavaScript frameworks are simply a single ‘.js’ file which is included in the web root folder so that the web pages may access its functions. The functions included in this library are responsible for all the extra features of the web framework.
-				</p>
+				<div>
+					<p>
+						All web frameworks are structured on a programming language which uses the inputs to convert everything into HTML to be viewed in a website. To make a framework special it needs to have some extra functionality which you do not get from simply writing code in that programming language without the framework. The framework coding library is where this comes from. The library defines all the structure of the framework and all of the features that make website creation fluid, fast, and easy. Some frameworks are nothing more than one file with all of the extra coding functions which one may use to make writing a website easier. Some JavaScript frameworks are simply a single ‘.js’ file which is included in the web root folder so that the web pages may access its functions. The functions included in this library are responsible for all the extra features of the web framework.
+					</p>
+				</div>
 			</section>
 			<section id="considerations" class="reportText">
 				<h2>Things to Consider When Selecting a Web Framework</h2>
-				<p>
-					Web frameworks make web design easier to accomplish but also have their restrictions. No single framework is the end all of frameworks and will perfectly suit all of your needs. This is why there are hundreds of frameworks to choose from. If you are looking to begin using a web framework for your web design, be sure to consider the following things:
-				</p>
-				<ul>
-					<li>
-						<h3>Simplicity of use</h3>Many frameworks like the CMS style ones will be very easy to use and will take little training to get started. This level of simplicity can also make it very difficult to perform very advanced functions which would require programming. Be sure to pick a framework which is at your skill level but may also allow your skill level to increase.
-					</li>
-					<li>
-						<h3>Programming Language</h3>If you are a developer and are already comfortable with a certain programming language, look for a framework which will allow you to build off of that skill. All frameworks will come with a learning curve so if you need to get something started quickly using something which will already have some familiarity will speed the process up.
-					</li>
-					<li>
-						<h3>Popularity/Compliance</h3>I know that popularity is not everything and the big name brands are not always the best in everything but they do have something to consider, compliance. You need to make sure that your framework will make creating standard compliant websites easy because not every web browser is created equal. Look for a framework which will work with several browser types so that your website will always look good. The best place to start may be the popular ones because they are already being used by big companies to make websites which are cross-browser compatible. Also, if you are hosting your website with a web hosting company they may be able to offer support and even installation services for some more well-known frameworks but not for others.
-					</li>
-				</ul>
+				<div>
+					<p>
+						Web frameworks make web design easier to accomplish but also have their restrictions. No single framework is the end all of frameworks and will perfectly suit all of your needs. This is why there are hundreds of frameworks to choose from. If you are looking to begin using a web framework for your web design, be sure to consider the following things:
+					</p>
+					<ul>
+						<li>
+							<h3>Simplicity of use</h3>Many frameworks like the CMS style ones will be very easy to use and will take little training to get started. This level of simplicity can also make it very difficult to perform very advanced functions which would require programming. Be sure to pick a framework which is at your skill level but may also allow your skill level to increase.
+						</li>
+						<li>
+							<h3>Programming Language</h3>If you are a developer and are already comfortable with a certain programming language, look for a framework which will allow you to build off of that skill. All frameworks will come with a learning curve so if you need to get something started quickly using something which will already have some familiarity will speed the process up.
+						</li>
+						<li>
+							<h3>Popularity/Compliance</h3>I know that popularity is not everything and the big name brands are not always the best in everything but they do have something to consider, compliance. You need to make sure that your framework will make creating standard compliant websites easy because not every web browser is created equal. Look for a framework which will work with several browser types so that your website will always look good. The best place to start may be the popular ones because they are already being used by big companies to make websites which are cross-browser compatible. Also, if you are hosting your website with a web hosting company they may be able to offer support and even installation services for some more well-known frameworks but not for others.
+						</li>
+					</ul>
+				</div>
 			</section>
 		</section>
 	</div>
 </div>
 </body>
-
+<script src="js/mainJS.js" type="text/javascript"></script>
+<script src="js/jQ.js" type="text/javascript"></script>
 <noscript>Hey you need to enable JavaScripts if you want to view this web page.</noscript>
 </html>

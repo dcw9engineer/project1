@@ -142,12 +142,34 @@ div.txtWithImg:hover div.txtImg {
 }
 
 /*This is the HTML1 page styling*/
+#accordionStatus{
+	font-family: 'Permanent Marker';
+	font-size: 0.9em;
+	color:rgb(20,111,34);
+}
+#accordionOpt button{
+	font-family:'Rock Salt',cursive;
+	background:#000000;
+	border:#000000;
+	color: rgb(247, 247, 247);
+}
+#accordionOpt button:hover{
+	background:rgb(20, 111, 34);
+}
+
+.reportText h2:hover{
+	background:#808080;
+}
+.reportText h2{
+	cursor: pointer;
+}
+.reportText div{
+	display: none;
+}
 #contentNavAndText{
         width: 100%
         position: absolute;
 }
-
-
 #contentNavAndText a{
         font-family: 'Permanent Marker';
         color: black;
