@@ -1,3 +1,7 @@
+/*
+ * this page is where I write the jQuery code I am using
+ */
+
 //Create Global variables
 var oneOrMany = 'one';
 //Create initial conditions

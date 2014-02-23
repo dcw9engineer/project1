@@ -5,7 +5,9 @@ font-family: 'Happy Monkey', cursive;
 font-family: 'IM Fell English', serif;
 font-family: 'Rock Salt', cursive;
  */
-/*This is the general styling section*/
+/*This is the general styling section
+ *Now I have added some stuff for the jQuery assignment
+ */
 body{
 	margin:0 0 0 0;
 }

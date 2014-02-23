@@ -1,6 +1,7 @@
 //This is the main JS page
 ///This is the header and footer insertion
 //create notification div
+//I have disabled the alert
 var noticeDiv = document.createElement('div');
 noticeDiv.innerHTML = '<h2>You have been on this boring page for 10 seconds. Would you like to go somewhere else?</h2><br />'+
 						'<button id="noticeYes" class="noticeButton">Yes please!</button>'+
