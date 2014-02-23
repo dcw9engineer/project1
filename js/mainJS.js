@@ -17,7 +17,7 @@ var headerText = '<h1>A Civil Engineer Learning Web Design</h1>' +
 					'<a href="aboutMe.html"><button id="aboutMeButton">About Me</button></a>'+
 				'</nav>';
 //footer tags
-var footerText = 'Brought to you by me';
+var footerText = 'Brought to you by a civil engineer';
 var footerTag = document.createElement('footer');
 //create a set timeout
 function stayFunction(){
@@ -70,15 +70,15 @@ var setTitle = function(){
 	document.title=title;
 };
 var getStarted = function(){
-	setTitle.apply();
-	getHeader.apply();
-	timeLapse.apply();
-	document.body.appendChild(noticeDiv);
+	setTitle.apply(); //changes the title of the page
+	getHeader.apply(); //adds the header and footer to the page
+	//timeLapse.apply(); //runs the popup every 10 seconds
+	document.body.appendChild(noticeDiv); //adds the popup div element
 	
-	var buttonGo = document.getElementById('noticeYes');
-	var buttonStay = document.getElementById('noticeNo');
-	buttonGo.addEventListener('click',goFunction);
-	buttonStay.addEventListener('click',stayFunction);
+	var buttonGo = document.getElementById('noticeYes'); //adds the 'Yes' button to the popup
+	var buttonStay = document.getElementById('noticeNo'); //adds the 'no' button to the popup
+	buttonGo.addEventListener('click',goFunction); //control for the popup 'yes' button
+	buttonStay.addEventListener('click',stayFunction); //control for the popup 'no' button
 };
 //make the getHeader function run when the window loads
 window.onload = getStarted;
