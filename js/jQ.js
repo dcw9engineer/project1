@@ -4,6 +4,7 @@
 
 //Create Global variables
 var oneOrMany = 'one';
+var alertOn = true;
 //Create initial conditions
 $('#oneBtn').hide();
 
@@ -48,3 +49,7 @@ $("section > h2").click(function(){
 });
 $('section div:eq(0)').show();
 
+//this is the tabs ui for the AboutMeTabs page
+$(function() {
+	$( "#tabs" ).tabs();
+});

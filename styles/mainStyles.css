@@ -75,6 +75,10 @@ header button{
 header button:hover{
 	background:rgb(20, 111, 34);
 }
+/*This is the alertToggle button styling*/
+#alertToggle{
+	background: rgb(214,204,11);
+}
 /*This is the Home page styling*/
 #homeSec{
 	margin:1em;
@@ -205,7 +209,7 @@ div.txtWithImg:hover div.txtImg {
 /*notification styling*/
 #notification{
 	border-style:solid;
-	height:150px;
+	height:200px;
 	width:250px;
 	text-align: center;
 	left:35%;
@@ -226,4 +230,22 @@ div.txtWithImg:hover div.txtImg {
 }
 .noticeButton:hover{
 	color: rgb(299,230,23);
+}
+/*This is the AboutMeTabs page styling*/
+.tags{
+	height:100%;
+}
+.tabImg{
+	height:100%;
+	float: left;
+	margin-right:20px;
+}
+.tabTxt{
+	height:100%;
+}
+#tabs{
+	height:100%;
+}
+.ui-widget-content{
+	border:none;
 }

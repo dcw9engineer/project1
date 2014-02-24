@@ -4,26 +4,67 @@
 <head>
     <title> </title>
     <meta charset="UTF-8" />
-    <link href="styles/mainStyles.css" rel="stylesheet" />
+	<link href="styles/mainStyles.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Muli|Happy+Monkey|IM+Fell+English|Rock+Salt' rel='stylesheet' type='text/css'>
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-	</script>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+	<script src="js/jquery-1.11.0.js"></script>
 </head>
 <body>
 <div id="content">
 	<section id="homeSec" class="normalText">
-		<h1>Welcome to my assignments page!</h1>
+		<h1>Welcome to my assignments website!</h1>
 		<p>
-			From this site you can view assignments I have completed for the IS 542 course at Brigham Young University (BYU) through the navigation buttons aboves. As I complete more assignments I will be adding more buttons and pages for you to see.
+			This was created to fulfil an assignment for my advanced web design class through the school of infomation systems management (IS) at 
+			Brigham Young University (BYU). The assignment was accomplished in 4 parts.
+			<ol>
+				<li>Creating the HTML</li>
+				<li>Styling sheet in CSS</li>
+				<li>Developing the JavaScript</li>
+				<li>Implementing jQuery</li>
+			</ol>
 		</p>
+		<h2>Creating the HTML</h2>
 		<p>
-			You can also read a little about me by on the "About Me" page.
+			The HTML code here was all written with an emphasis on syntactical correctness. This means that I needed to have a defined 
+			charset, document type, heading tags, etc. This part was simple and was supposed to look simple because there was no styling yet. To 
+			give me something to actually write about in the HTML I was asked to pick some kind of web technology to write about. This is presented 
+			in the "Frameworks" page. 
+		</p>
+		<h2>Styling the sheet in CSS</h2>
+		<p>
+			The CSS code for this website implements useful transitions supported by CSS3. It was written by scratch not using another program 
+			to create the styles for me. The "About Me" page shows pictures which slide to the left when you hover over them to reveal a little 
+			text blurb. The transitions for that page were done completely in CSS3 with no scripting.
+		</p>
+		<h2>Developing the JavaScript</h2>
+		<p>
+			You may have noticed a very annoying popup that shows up again and again only 10 seconds after you have closed it. I'm sorry that you have 
+			to deal with that but it was the assigment. I was told to create an HTML popup which provided the option of staying on the current page or 
+			going to Google and have it wait 10 seconds before it came again.<br />
+			If you want to disable this popup just close it out then click on the yellow "P" in the header. When you do it will change to a blue "X", meaning 
+			the popup has been disabled. Click it again if you want it back.<br />
+			The other part of this assignment was to make a header and footer which are dynammically inserted into each page. So the green header and footer and 
+			the buttons inside of them are inserted into the page by JavaScript and the rest is static text.
+		</p>
+		<h2>Implementing jQuery</h2>
+		<p>
+			In this final part of the assignment I was asked to implement some effects and user interface elements into the page using jQuery. I used jQuery to create 
+			the accordion style compression and expansion you see in the "Frameworks" page which was not there before. By default the accordion styleing will only let 
+			you see one section at a time but if you hit the "Show Multiple Sections" button on the left you can have more than one open at a time. Then use the links 
+			below that to navigate to different headings within the page when it gets really long.<br />
+			I also recreated the "About Me" page with tabs, resulting in the "About Me Tabs" page. They both have the same content but with different flavors.
+		</p>
+		<h1>Look Around</h1>
+		<p>
+			So please feel free to look around and see what you see. I don't have any kinds of secrets so if you find something interesting hit F12 on your keyboard and 
+			inspect my code. If you really care to ask me something or just comment you can use the e-mail link at the bottom of the "About Me" page.
 		</p>
 	</section>
 </div>
 </body>
 <script src="js/mainJS.js" type="text/javascript"></script>
 <script src="js/jQ.js" type="text/javascript"></script>
+
 <noscript>Hey you need to enable JavaScripts if you want to view this web page.</noscript>
 </html>
